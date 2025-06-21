@@ -3,42 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parabéns pela decisão! ��</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎉</text></svg>">
-
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', 'SEU_PIXEL_ID'); // 🚨 SUBSTITUA 'SEU_PIXEL_ID' pelo seu ID real do Pixel!
-        fbq('track', 'PageView'); // Evento básico sempre disparado
-
-        // Evento de Conversão de Compra
-        // Este é o evento mais importante para otimização de campanhas de venda.
-        // Se possível, use o valor real da compra. Se não houver, um valor mínimo é aceitável.
-        fbq('track', 'Purchase', {value: 0.01, currency: 'BRL'}); // 🚨 Ajuste o valor e a moeda se necessário!
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
-
+    <title>Sua Cadastro Foi Confirmado!</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✔️</text></svg>">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background-color: #f0f2f5;
             color: #333;
             text-align: center;
             padding: 20px;
@@ -46,58 +22,78 @@
         }
         .container {
             background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             max-width: 600px;
             width: 100%;
-            animation: fadeIn 0.8s ease-out;
         }
         h1 {
-            color: #28a745; /* Cor verde para a mensagem de sucesso */
-            font-size: 2.8em;
+            color: #28a745; /* Um tom de verde para indicar sucesso */
             margin-bottom: 20px;
+            font-size: 2.5em;
         }
         p {
             font-size: 1.1em;
             line-height: 1.6;
             margin-bottom: 25px;
-            color: #555;
         }
-        .whatsapp-button {
+        .thank-you-image {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .whatsapp-link {
             display: inline-block;
-            background-color: #25D366; /* Cor oficial do WhatsApp */
+            background-color: #25D366; /* Verde do WhatsApp */
             color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
+            padding: 12px 25px;
+            border-radius: 5px;
             text-decoration: none;
-            font-size: 1.2em;
             font-weight: bold;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
         }
-        .whatsapp-button:hover {
+        .whatsapp-link:hover {
             background-color: #1DA851;
-            transform: translateY(-2px);
-        }
-        .whatsapp-button:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
         }
     </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '541679959023331'); // <--- IMPORTANTE: SUBSTITUA SEU_ID_DO_PIXEL PELO SEU ID REAL
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=541679959023331&ev=PageView&noscript=1" // <--- IMPORTANTE: SUBSTITUA SEU_ID_DO_PIXEL PELO SEU ID REAL
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body>
     <div class="container">
-        <h1>🎉 Obrigado por fechar conosco! 🎉</h1>
-        <p>Esperamos que esta parceria dure por muito tempo. Agradecemos a sua preferência!</p>
-        <p>Vamos te mandar o restante das informações no WhatsApp!</p>
-        <a href="http://wa.me/5531986290754"  class="whatsapp-button">
-            Clique para voltar para a conversa
-        </a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/1200px-Twitter_Verified_Badge.svg.png" alt="Checkmark de Confirmação" class="thank-you-image">
+        <h1>Obrigado pela preferência!</h1>
+        <p>Seu painel está sendo criado! Esperamos que a nossa parceria seja duradoura.</p>
+        <p>Mandaremos o restante das informações no WhatsApp.</p>
+        <p>Clique abaixo para finalizar e voltar para o WhatsApp:</p>
+        <a href="https://wa.me/5531986290754?text=Ol%C3%A1%2C%20acabei%20de%20abrir%20um%20painel%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."  class="whatsapp-link">Falar pelo WhatsApp</a>
     </div>
+
+    <!-- Script para disparar o evento de Compra do Pixel do Facebook -->
+    <script>
+        fbq('track', 'Purchase', {
+            // Você pode adicionar um valor e moeda aqui se souber, por exemplo:
+            // value: 100.00,
+            // currency: 'BRL'
+            // Se você não tiver um valor exato ou não for relevante para sua otimização, pode deixar sem estes parâmetros.
+        });
+    </script>
 </body>
 </html>
