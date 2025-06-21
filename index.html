@@ -1,59 +1,12 @@
-html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Obrigado</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f9;
-        }
-        .thank-you-container {
-            text-align: center;
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #555;
-            line-height: 1.6;
-        }
-        .whatsapp-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            color: #fff;
-            background-color: #25d366;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .whatsapp-button:hover {
-            background-color: #1ebe57;
-        }
-    </style>
-</head>
-<body>
-    <div class="thank-you-container">
-        <h1>Obrigado!</h1>
-        <p>Agradecemos por fechar conosco. Esperamos manter essa nossa parceria por muito tempo para crescermos juntos.</p>
-        <!-- Substitua 'SEUNUMERO' pelo número de telefone do WhatsApp incluindo o código do país -->
-        <a href="https://wa.me/5531986290754" target="_blank" class="whatsapp-button">Voltar para o WhatsApp</a>
-    </div>
+    <title>Parabéns pela decisão! ��</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎉</text></svg>">
 
-    <!-- Código para o Pixel do Facebook -->
-    <!-- Substitua por seu código de pixel real -->
+    <!-- Facebook Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -63,12 +16,88 @@ html
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '541679959023331');
-        fbq('track', 'PageView');
+        fbq('init', 'SEU_PIXEL_ID'); // 🚨 SUBSTITUA 'SEU_PIXEL_ID' pelo seu ID real do Pixel!
+        fbq('track', 'PageView'); // Evento básico sempre disparado
+
+        // Evento de Conversão de Compra
+        // Este é o evento mais importante para otimização de campanhas de venda.
+        // Se possível, use o valor real da compra. Se não houver, um valor mínimo é aceitável.
+        fbq('track', 'Purchase', {value: 0.01, currency: 'BRL'}); // 🚨 Ajuste o valor e a moeda se necessário!
     </script>
-    <noscript>
-        <img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/>
-    </noscript>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            animation: fadeIn 0.8s ease-out;
+        }
+        h1 {
+            color: #28a745; /* Cor verde para a mensagem de sucesso */
+            font-size: 2.8em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            color: #555;
+        }
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366; /* Cor oficial do WhatsApp */
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .whatsapp-button:hover {
+            background-color: #1DA851;
+            transform: translateY(-2px);
+        }
+        .whatsapp-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Obrigado por fechar conosco! 🎉</h1>
+        <p>Esperamos que esta parceria dure por muito tempo. Agradecemos a sua preferência!</p>
+        <p>Vamos te mandar o restante das informações no WhatsApp!</p>
+        <a href="http://wa.me/5531986290754"  class="whatsapp-button">
+            Clique para voltar para a conversa
+        </a>
+    </div>
 </body>
 </html>
