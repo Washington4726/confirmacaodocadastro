@@ -1,0 +1,74 @@
+html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Obrigado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .thank-you-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .whatsapp-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #25d366;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .whatsapp-button:hover {
+            background-color: #1ebe57;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <h1>Obrigado!</h1>
+        <p>Agradecemos por fechar conosco. Esperamos manter essa nossa parceria por muito tempo para crescermos juntos.</p>
+        <!-- Substitua 'SEUNUMERO' pelo número de telefone do WhatsApp incluindo o código do país -->
+        <a href="https://wa.me/5531986290754" target="_blank" class="whatsapp-button">Voltar para o WhatsApp</a>
+    </div>
+
+    <!-- Código para o Pixel do Facebook -->
+    <!-- Substitua por seu código de pixel real -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '541679959023331');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/>
+    </noscript>
+</body>
+</html>
